@@ -1,0 +1,266 @@
+$primary-font: "Nunito", sans-serif;
+$secondary-font: "Roboto", sans-serif;
+
+.about-sec-main,
+.about-sec-book,
+.about-sec-carousel,
+.about-sec-book-demo {
+  height: 100dvh;
+  // margin-inline: 2rem;
+}
+
+.about-nav {
+  margin-inline: 2rem;
+}
+
+.about-sec-main {
+  height: calc(100dvh + 5rem) !important;
+  main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .carousel-container {
+      height: 40%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      padding-top: 30px;
+
+      // Hide the scroll bar
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .carousel-container.active {
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+      }
+      cursor: grab;
+      cursor: -webkit-grab;
+      scroll-behavior: smooth;
+
+      .scroll-card {
+        flex: 0 0 auto;
+        height: 100%;
+        width: 230px;
+        background-color: #d9d9d9;
+        border-radius: 2rem;
+        display: inline-block; // Ensure cards are inline for horizontal scrolling
+      }
+    }
+
+    .about-desc-container {
+      height: 60%;
+      width: 100%;
+      // background-color: lightcoral;
+      p {
+        margin-left: 2rem;
+        font-family: $primary-font;
+        font-size: 25px;
+        font-weight: bold;
+        width: 80%;
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
+.about-sec-book {
+  .scroll-logo-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll; // Enables horizontal scrolling
+    white-space: nowrap; // Prevents line breaks
+    gap: 20px; // Space between items
+
+    // Hide the scroll bar
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      flex: 0 0 auto;
+      gap: 20px;
+      width: fit-content;
+
+      p {
+        font-family: $secondary-font;
+        font-size: 80px;
+        font-weight: bold;
+        white-space: nowrap; // Prevents text wrapping
+      }
+    }
+  }
+
+  .book-text-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .empty-content {
+      width: 40%;
+    }
+    .text-content {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        font-family: $primary-font;
+        font-size: 23px;
+        width: 90%;
+      }
+
+      .about-link {
+        font-family: $secondary-font;
+        font-size: 22px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: black;
+        margin-top: 100px;
+        text-underline-offset: 10px;
+      }
+    }
+  }
+}
+
+.about-sec-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .carousel-splitter {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    // Hide the scroll bar
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-card {
+      flex: 0 0 auto;
+      height: 95%;
+      width: 400px;
+      background-color: #d9d9d9;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.about-sec-book-demo {
+  margin-top: 20px;
+
+  svg {
+    position: absolute;
+  }
+  p {
+    font-family: $primary-font;
+    font-size: 20px;
+    float: right;
+    width: 50%;
+    margin-top: 200px;
+    margin-right: 2rem;
+  }
+
+  .discovery-link {
+    font-family: $secondary-font;
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+    margin-top: 100px;
+    text-underline-offset: 10px;
+    position: relative;
+    top: 650px;
+    left: 1200px;
+  }
+}
+
+.about-sec-footer {
+  height: 350px;
+  background-color: #d9d9d9;
+  margin-top: 18px;
+  .footer-half-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-nav-container {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .footer-combined-nav {
+        display: flex;
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+        justify-content: space-between;
+        font-family: $secondary-font;
+        font-size: 20px;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          li {
+            list-style: none;
+          }
+        }
+      }
+
+      .footer-nav {
+        width: 50%;
+        font-family: $secondary-font;
+        margin-bottom: 50px;
+
+        ul {
+          display: flex;
+          justify-content: space-evenly;
+        }
+        li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .about-sec-main {
+    height: calc(100dvh + 10rem) !important;
+  }
+
+  .about-sec-book-demo {
+    .discovery-link {
+      left: 1000px;
+    }
+  }
+
+  .about-sec-footer {
+    margin-top: 95px;
+  }
+}

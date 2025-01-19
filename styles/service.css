@@ -1,0 +1,257 @@
+.service-sec-main,
+.service-sec-carousel,
+.service-sec-brand {
+  height: 100dvh;
+}
+
+.service-nav {
+  margin-inline: 2rem;
+}
+
+.service-sec-main {
+  height: calc(100dvh + 5rem) !important;
+}
+.service-sec-main main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service-sec-main main .carousel-container {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-top: 30px;
+  cursor: grab;
+  cursor: -webkit-grab;
+  scroll-behavior: smooth;
+}
+.service-sec-main main .carousel-container::-webkit-scrollbar {
+  display: none;
+}
+.service-sec-main main .carousel-container .carousel-container.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+.service-sec-main main .carousel-container .scroll-card {
+  flex: 0 0 auto;
+  height: 100%;
+  width: 230px;
+  background-color: #d9d9d9;
+  border-radius: 2rem;
+  display: inline-block;
+}
+.service-sec-main main .service-desc-container {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.service-sec-main main .service-desc-container p {
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  width: 70%;
+  padding-top: 50px;
+  margin-left: 2rem;
+}
+.service-sec-main main .service-desc-container .service-book-url {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+  margin-top: 100px;
+  text-underline-offset: 10px;
+  margin-top: 50px;
+  margin-left: 2rem;
+}
+
+.service-sec-book {
+  height: calc(100dvh + 5rem) !important;
+}
+.service-sec-book .scroll-logo-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  gap: 20px;
+}
+.service-sec-book .scroll-logo-text::-webkit-scrollbar {
+  display: none;
+}
+.service-sec-book .scroll-logo-text .content {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.service-sec-book .scroll-logo-text .content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.service-sec-book .book-text-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-sec-book .book-text-container .empty-content {
+  width: 40%;
+}
+.service-sec-book .book-text-container .text-content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.service-sec-book .book-text-container .text-content p {
+  font-family: "Nunito", sans-serif;
+  font-size: 23px;
+  width: 90%;
+}
+.service-sec-book .book-text-container .text-content .services-container {
+  padding: 60px 10px;
+  border-bottom: 1px solid black;
+}
+.service-sec-book .book-text-container .text-content .services-container .head {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+.service-sec-book .book-text-container .text-content .service-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+  margin-top: 50px;
+  text-underline-offset: 10px;
+}
+
+.service-sec-brand {
+  margin-top: 100px;
+  margin-left: 2rem;
+}
+.service-sec-brand h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 100px;
+}
+.service-sec-brand .brand-div {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-sec-brand .brand-div p {
+  font-family: "Nunito", sans-serif;
+  font-size: 21px;
+  width: 60%;
+  padding-top: 50px;
+}
+.service-sec-brand .brand-div .brand-placeholder {
+  height: 350px;
+  width: 300px;
+  background-color: #d9d9d9;
+  border-radius: 1rem;
+}
+.service-sec-brand .brand-list-div {
+  margin-left: 2rem;
+  margin-top: 100px;
+}
+.service-sec-brand .brand-list-div ul {
+  display: inline-block;
+}
+.service-sec-brand .brand-list-div ul li {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+.service-sec-brand .brand-list-div ul:nth-child(2) {
+  margin-left: 50px;
+}
+.service-sec-brand .brand-url {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+  text-underline-offset: 10px;
+  float: right;
+  margin-right: 10rem;
+  margin-top: 3rem;
+}
+
+.service-sec-footer {
+  height: 350px;
+  background-color: #d9d9d9;
+  margin-top: 18px;
+}
+.service-sec-footer .footer-half-2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-sec-footer .footer-half-2 .footer-nav-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.service-sec-footer .footer-half-2 .footer-nav-container .footer-combined-nav {
+  display: flex;
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.service-sec-footer .footer-half-2 .footer-nav-container .footer-combined-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.service-sec-footer .footer-half-2 .footer-nav-container .footer-combined-nav ul li {
+  list-style: none;
+}
+.service-sec-footer .footer-half-2 .footer-nav-container .footer-nav {
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+}
+.service-sec-footer .footer-half-2 .footer-nav-container .footer-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.service-sec-footer .footer-half-2 .footer-nav-container .footer-nav li {
+  display: inline-block;
+}
+
+@media (max-width: 1400px) {
+  .service-sec-main {
+    height: calc(100dvh + 20rem) !important;
+  }
+  .service-sec-book-demo .discovery-link {
+    left: 1000px;
+  }
+  .service-sec-footer {
+    margin-top: 95px;
+  }
+}/*# sourceMappingURL=service.css.map */
