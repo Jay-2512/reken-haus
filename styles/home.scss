@@ -1,8 +1,6 @@
 $primary-font: "Nunito", sans-serif;
 $secondary-font: "Roboto", sans-serif;
 
-
-
 .home-sec-main,
 .home-sec-featured,
 .home-sec-about,
@@ -23,18 +21,58 @@ $secondary-font: "Roboto", sans-serif;
   height: calc(100dvh + 5rem) !important;
 }
 
-// .home-sec-featured {
-//   background-color: red;
-// }
+.home-sec-main {
+  margin-inline-end: 0px !important;
+}
+.home-sec-featured {
+  margin-inline: 0px;
+}
 
 .home-main {
   margin-top: 3rem;
-  width: 40%;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
   h1 {
     font-family: $primary-font;
     font-size: 1.5625rem;
     font-weight: 400;
     text-align: justify;
+    width: 40%;
+  }
+
+  .home-content-carousel {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    gap: 20px;
+
+    // hide the scroll bar
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .home-card {
+      height: 100%;
+      width: 200px;
+      background-color: #dfdfdf;
+      border-radius: 1rem;
+      flex: 0 0 auto;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 
@@ -47,12 +85,14 @@ $secondary-font: "Roboto", sans-serif;
     font-family: $secondary-font;
     font-size: 6.25rem;
   }
+  margin-right: 2rem;
 }
 
 .home-featured {
   h1 {
     font-family: $secondary-font;
     font-size: 5rem;
+    margin-left: 2rem;
   }
 
   .work-frame {
@@ -62,17 +102,40 @@ $secondary-font: "Roboto", sans-serif;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    gap: 20px;
+
+    // hide the scroll bar
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .work-sub {
-    height: 100%;
+    height: 95%;
     width: 24%;
+    flex: 0 0 auto;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      margin-inline: 2rem;
+    }
   }
+
   .work-img {
     height: 80%;
     width: 100%;
     background-color: rgba(128, 128, 128, 0.348);
     border-radius: 2rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .work-info {
     width: 100%;
@@ -156,15 +219,18 @@ $secondary-font: "Roboto", sans-serif;
   font-family: $secondary-font;
   font-size: 5rem;
   font-weight: bold;
+  margin-left: 2rem;
 }
 
 .home-sec-service {
+  margin-inline: 0px !important;
   height: 100%;
   main {
     height: 90%;
     width: 100%;
 
     .service-strip {
+      margin-inline: 2rem;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -205,11 +271,20 @@ $secondary-font: "Roboto", sans-serif;
     align-items: center;
     margin-top: 6.25rem;
     margin-bottom: 1.25rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    gap: 50px;
+
+    // hide the scroll bar
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .content {
       width: 7.5rem;
       height: 7.5rem;
       background-color: rgba(128, 128, 128, 0.281);
+      flex: 0 0 auto;
     }
   }
 }
@@ -357,12 +432,65 @@ $secondary-font: "Roboto", sans-serif;
   }
 }
 
-// Media queries for smaller monitors/laptop displays
-@media (max-width: 1400px) {
-  .nav ul {
-    width: 60%;
+@media (max-width: 1980px) {
+  .home-sec-main {
+    // background-color: yellow !important;
+    height: 100dvh;
+  }
+
+  .home-main-header {
+    position: relative;
+    float: right;
+    right: 2rem;
+    top: 10rem;
+    h1 {
+      font-family: $secondary-font;
+      font-size: 6.25rem;
+    }
     margin-right: 2rem;
   }
+
+  .card-1 {
+    position: absolute;
+    margin-top: 18.75rem;
+    margin-left: 7.5rem;
+  }
+
+  .card-2 {
+    position: absolute;
+    margin-top: 6.25rem;
+    margin-left: 51.25rem;
+  }
+
+  .card-3 {
+    position: absolute;
+    margin-top: 28.125rem;
+    margin-left: 50rem;
+  }
+
+  .card-4 {
+    position: absolute;
+    margin-top: 53.125rem;
+    margin-left: 30rem !important;
+  }
+
+  .card-5 {
+    position: absolute;
+    margin-top: 60rem !important;
+    margin-left: 75rem !important;
+  }
+
+  .home-sec-footer {
+    height: 70dvh !important;
+  }
+}
+
+// Media queries for smaller monitors/laptop displays
+@media (max-width: 1400px) {
+  // .nav ul {
+  //   width: 60%;
+  //   margin-right: 2rem;
+  // }
 
   .home-main-header h1 {
     font-size: 5rem;

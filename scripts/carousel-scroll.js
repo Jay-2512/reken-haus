@@ -53,4 +53,7 @@ const setupInfiniteScroll = (containerSelector) => {
 
 // Apply infinite scroll to both containers
 setupInfiniteScroll(".carousel-container"); // First container
-setupInfiniteScroll(".scroll-logo-text");  // Second container
+setupInfiniteScroll(".scroll-logo-text"); // Second container
+setupInfiniteScroll(".work-frame");
+setupInfiniteScroll(".home-content-carousel");
+setupInfiniteScroll(".carousel-container");

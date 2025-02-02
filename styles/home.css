@@ -16,15 +16,56 @@
   height: calc(100dvh + 5rem) !important;
 }
 
+.home-sec-main {
+  margin-inline-end: 0px !important;
+}
+
+.home-sec-featured {
+  margin-inline: 0px;
+}
+
 .home-main {
   margin-top: 3rem;
-  width: 40%;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
 }
 .home-main h1 {
   font-family: "Nunito", sans-serif;
   font-size: 1.5625rem;
   font-weight: 400;
   text-align: justify;
+  width: 40%;
+}
+.home-main .home-content-carousel {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  gap: 20px;
+}
+.home-main .home-content-carousel::-webkit-scrollbar {
+  display: none;
+}
+.home-main .home-content-carousel .home-card {
+  height: 100%;
+  width: 200px;
+  background-color: #dfdfdf;
+  border-radius: 1rem;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+.home-main .home-content-carousel .home-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home-main-header {
@@ -32,6 +73,7 @@
   float: right;
   right: 2rem;
   top: 5rem;
+  margin-right: 2rem;
 }
 .home-main-header h1 {
   font-family: "Roboto", sans-serif;
@@ -41,6 +83,7 @@
 .home-featured h1 {
   font-family: "Roboto", sans-serif;
   font-size: 5rem;
+  margin-left: 2rem;
 }
 .home-featured .work-frame {
   width: 100%;
@@ -49,16 +92,35 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  gap: 20px;
+}
+.home-featured .work-frame::-webkit-scrollbar {
+  display: none;
 }
 .home-featured .work-sub {
-  height: 100%;
+  height: 95%;
   width: 24%;
+  flex: 0 0 auto;
+  transition: 0.3s ease-in-out;
+}
+.home-featured .work-sub:hover {
+  transform: scale(1.05);
+  margin-inline: 2rem;
 }
 .home-featured .work-img {
   height: 80%;
   width: 100%;
   background-color: rgba(128, 128, 128, 0.348);
   border-radius: 2rem;
+  overflow: hidden;
+}
+.home-featured .work-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home-featured .work-info {
   width: 100%;
@@ -139,9 +201,11 @@
   font-family: "Roboto", sans-serif;
   font-size: 5rem;
   font-weight: bold;
+  margin-left: 2rem;
 }
 
 .home-sec-service {
+  margin-inline: 0px !important;
   height: 100%;
 }
 .home-sec-service main {
@@ -149,6 +213,7 @@
   width: 100%;
 }
 .home-sec-service main .service-strip {
+  margin-inline: 2rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -187,11 +252,18 @@
   align-items: center;
   margin-top: 6.25rem;
   margin-bottom: 1.25rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  gap: 50px;
+}
+.home-sec-service .carousel-container::-webkit-scrollbar {
+  display: none;
 }
 .home-sec-service .carousel-container .content {
   width: 7.5rem;
   height: 7.5rem;
   background-color: rgba(128, 128, 128, 0.281);
+  flex: 0 0 auto;
 }
 
 .home-sec-testimonials h1 {
@@ -317,11 +389,51 @@
   display: inline-block;
 }
 
-@media (max-width: 1400px) {
-  .nav ul {
-    width: 60%;
+@media (max-width: 1980px) {
+  .home-sec-main {
+    height: 100dvh;
+  }
+  .home-main-header {
+    position: relative;
+    float: right;
+    right: 2rem;
+    top: 10rem;
     margin-right: 2rem;
   }
+  .home-main-header h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 6.25rem;
+  }
+  .card-1 {
+    position: absolute;
+    margin-top: 18.75rem;
+    margin-left: 7.5rem;
+  }
+  .card-2 {
+    position: absolute;
+    margin-top: 6.25rem;
+    margin-left: 51.25rem;
+  }
+  .card-3 {
+    position: absolute;
+    margin-top: 28.125rem;
+    margin-left: 50rem;
+  }
+  .card-4 {
+    position: absolute;
+    margin-top: 53.125rem;
+    margin-left: 30rem !important;
+  }
+  .card-5 {
+    position: absolute;
+    margin-top: 60rem !important;
+    margin-left: 75rem !important;
+  }
+  .home-sec-footer {
+    height: 70dvh !important;
+  }
+}
+@media (max-width: 1400px) {
   .home-main-header h1 {
     font-size: 5rem;
   }

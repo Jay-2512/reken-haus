@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.37/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="styles/main.css" />
@@ -28,19 +29,19 @@
         </div>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="#">Home</a>
+            <a href="about.html">About</a>
           </li>
           <li>
-            <a href="#">Home</a>
+            <a href="service.html">Services</a>
           </li>
           <li>
-            <a href="#">Home</a>
+            <a href="#">Works</a>
           </li>
           <li>
-            <a href="#">Home</a>
+            <a href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -51,6 +52,26 @@
           online. From impactful campaigns to smart growth solutions, we’re here
           to make your digital journey seamless and effective
         </h1>
+        <div class="home-content-carousel">
+          <div class="home-card">
+            <img src="./res/images/gen_1.jpeg" alt="" />
+          </div>
+          <div class="home-card">
+            <img src="./res/images/gen_2.jpeg" alt="" />
+          </div>
+          <div class="home-card">
+            <img src="./res/images/gen_3.jpeg" alt="" />
+          </div>
+          <div class="home-card">
+            <img src="./res/images/gen_4.jpeg" alt="" />
+          </div>
+          <div class="home-card">
+            <img src="./res/images/gen_5.jpeg" alt="" />
+          </div>
+          <div class="home-card">
+            <img src="./res/images/gen_6.jpeg" alt="" />
+          </div>
+        </div>
       </main>
       <div class="home-main-header">
         <h1>Tomorrow's <br />brand today</h1>
@@ -61,28 +82,36 @@
         <h1>featured work</h1>
         <div class="work-frame">
           <div class="work-sub">
-            <div class="work-img"></div>
+            <div class="work-img">
+              <img src="./res/images/fet_1.jpeg" alt="" />
+            </div>
             <div class="work-info">
               <p class="work-info-head">name</p>
               <p class="work-info-desc">name</p>
             </div>
           </div>
           <div class="work-sub">
-            <div class="work-img"></div>
+            <div class="work-img">
+              <img src="./res/images/fet_2.jpeg" alt="" />
+            </div>
             <div class="work-info">
               <p class="work-info-head">name</p>
               <p class="work-info-desc">name</p>
             </div>
           </div>
           <div class="work-sub">
-            <div class="work-img"></div>
+            <div class="work-img">
+              <img src="./res/images/fet_3.jpeg" alt="" />
+            </div>
             <div class="work-info">
               <p class="work-info-head">name</p>
               <p class="work-info-desc">name</p>
             </div>
           </div>
           <div class="work-sub">
-            <div class="work-img"></div>
+            <div class="work-img">
+              <img src="./res/images/fet_4.jpeg" alt="" />
+            </div>
             <div class="work-info">
               <p class="work-info-head">name</p>
               <p class="work-info-desc">name</p>
@@ -160,8 +189,6 @@
       </main>
       <a href="#" class="service-extended">service</a>
       <div class="carousel-container">
-        <div class="content"></div>
-        <div class="content"></div>
         <div class="content"></div>
         <div class="content"></div>
         <div class="content"></div>
@@ -286,14 +313,16 @@
           <nav class="footer-nav">
             <ul>
               <li>Home</li>
-              <li>Home</li>
-              <li>Home</li>
-              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Works</li>
             </ul>
           </nav>
         </div>
       </footer>
     </section>
     <script src="scripts/svg-anim.js"></script>
+    <script src="scripts/carousel-scroll.js"></script>
+    <script src="scripts/lenis.js"></script>
   </body>
 </html>
