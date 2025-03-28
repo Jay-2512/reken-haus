@@ -86,20 +86,20 @@
 .deco-1 {
   position: absolute;
   top: 200px;
-  left: 350px;
+  left: 380px;
   transform: rotate(-40deg);
 }
 
 .deco-2 {
   position: absolute;
-  top: 300px;
+  top: 330px;
   right: 400px;
   transform: rotate(16deg);
 }
 
 .deco-3 {
   position: absolute;
-  top: 440px;
+  top: 450px;
   transform: rotate(-16deg);
 }
 
@@ -453,6 +453,7 @@
   margin-left: 2rem;
   display: flex;
   margin-top: 3rem;
+  border-bottom: 1px solid black;
 }
 .home-footer .home-footer-links .footer-left {
   width: 75%;
