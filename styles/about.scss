@@ -213,55 +213,175 @@ $secondary-font: "Roboto", sans-serif;
 }
 
 .about-sec-footer {
-  height: 350px;
-  background-color: #d9d9d9;
-  margin-top: 18px;
-  .footer-half-2 {
+  height: fit-content;
+}
+
+.about-sec-footer {
+  margin-top: 6rem;
+  h1 {
+    font-family: $secondary-font;
+    font-size: 4.375rem;
+    margin-left: 1.875rem;
+    font-weight: bold;
+  }
+
+  .form-container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .form-container-left {
+    width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .form-container-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .form-input-container {
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    height: 100%;
+  }
 
-    .footer-nav-container {
+  .form-input {
+    width: 90%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 20px;
+    padding: 20px 0px;
+    font-family: $primary-font;
+    font-size: 15px;
+  }
+
+  .form-input::placeholder {
+    padding-bottom: 20px;
+    color: black;
+    font-size: 15px;
+    font-family: $primary-font;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-bottom: 3px solid black;
+  }
+
+  .form-button-container {
+    input {
+      background-color: #d9d9d9;
+      font-family: $primary-font;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      width: 200px;
+      transition: 0.2s ease-in-out;
+    }
+    input:hover {
+      background-color: #424f5f;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+.home-footer {
+  height: fit-content;
+  width: 100%;
+  margin-top: 5rem;
+
+  h1 {
+    font-family: $secondary-font;
+    font-size: 60px;
+  }
+
+  p {
+    font-family: $secondary-font;
+    font-size: 30px;
+    margin-left: 2rem;
+  }
+
+  .home-footer-links {
+    // width: 100%;
+    height: 200px;
+    margin-left: 2rem;
+    display: flex;
+    margin-top: 3rem;
+
+    .footer-left {
+      width: 75%;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-family: $secondary-font;
+      }
+    }
+
+    .footer-right {
+      width: 25%;
       height: 100%;
-      width: 50%;
       display: flex;
-      flex-direction: column;
-      align-items: flex-end;
       justify-content: space-between;
 
-      .footer-combined-nav {
-        display: flex;
-        width: 200px;
-        height: 150px;
-        margin: 10px;
-        justify-content: space-between;
-        font-family: $secondary-font;
-        font-size: 20px;
-
-        ul {
+      ul {
+        p {
+          font-size: 20px;
+          margin-left: 0px;
+          font-weight: 600;
+        }
+        li {
+          list-style: none;
           display: flex;
           flex-direction: column;
-          justify-content: space-evenly;
-          li {
-            list-style: none;
+
+          a {
+            text-decoration: none;
+            color: black;
+            font-family: $secondary-font;
+            font-size: 15px;
           }
         }
       }
+    }
+  }
 
-      .footer-nav {
-        width: 50%;
+  .home-footer-logo {
+    display: flex;
+    align-items: flex-end;
+    img {
+      height: 280px;
+      width: 280px;
+      object-fit: contain;
+    }
+
+    .contact-info-container {
+      height: 50px;
+      width: 100%;
+      margin-bottom: 45px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      p {
+        font-size: 17px;
         font-family: $secondary-font;
-        margin-bottom: 50px;
-
-        ul {
-          display: flex;
-          justify-content: space-evenly;
-        }
-        li {
-          display: inline-block;
-        }
       }
     }
   }

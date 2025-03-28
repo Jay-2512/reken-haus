@@ -9,15 +9,41 @@
 }
 
 .home-sec-main {
-  height: calc(100dvh + 5rem) !important;
-}
-
-.home-sec-footer {
-  height: calc(100dvh + 5rem) !important;
-}
-
-.home-sec-main {
   margin-inline-end: 0px !important;
+}
+
+.home-main-content-div {
+  width: 100%;
+  height: 150px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-main-content-div p {
+  width: 600px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+}
+
+.home-main-content-contact {
+  width: 320px;
+  height: 50px;
+  background-color: #d9d9d9;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  margin-right: 2rem;
+}
+.home-main-content-contact p {
+  text-align: center;
+}
+
+.home-sec-featured {
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 
 .home-sec-featured {
@@ -25,59 +51,64 @@
 }
 
 .home-main {
-  margin-top: 3rem;
   width: 100%;
+  height: 100%;
   display: flex;
-  gap: 5px;
-  justify-content: space-between;
   align-items: center;
-  height: 250px;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
-.home-main h1 {
+
+.home-deco-label {
+  background-color: #d9d9d9;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  transition: 0.2s ease-in-out;
+}
+.home-deco-label p {
   font-family: "Nunito", sans-serif;
-  font-size: 1.5625rem;
-  font-weight: 400;
-  text-align: justify;
-  width: 40%;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
 }
-.home-main .home-content-carousel {
-  width: 60%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  gap: 20px;
+
+.home-deco-label:hover {
+  background-color: #424f5f;
+  cursor: pointer;
 }
-.home-main .home-content-carousel::-webkit-scrollbar {
-  display: none;
+.home-deco-label:hover p {
+  color: white;
 }
-.home-main .home-content-carousel .home-card {
-  height: 100%;
-  width: 200px;
-  background-color: #dfdfdf;
-  border-radius: 1rem;
-  flex: 0 0 auto;
-  overflow: hidden;
+
+.deco-1 {
+  position: absolute;
+  top: 200px;
+  left: 350px;
+  transform: rotate(-40deg);
 }
-.home-main .home-content-carousel .home-card img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+
+.deco-2 {
+  position: absolute;
+  top: 300px;
+  right: 400px;
+  transform: rotate(16deg);
+}
+
+.deco-3 {
+  position: absolute;
+  top: 440px;
+  transform: rotate(-16deg);
 }
 
 .home-main-header {
-  position: relative;
-  float: right;
-  right: 2rem;
-  top: 5rem;
-  margin-right: 2rem;
-}
-.home-main-header h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 6.25rem;
+  width: 100%;
+  text-align: center;
+  margin-right: 2rem;
+  font-size: 110px;
 }
 
 .home-featured h1 {
@@ -316,77 +347,164 @@
 }
 
 .home-sec-footer {
-  margin-top: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.home-sec-footer .footer-half-1 {
-  height: 55%;
-  width: 100%;
+
+.home-sec-footer {
+  margin-top: 6rem;
 }
-.home-sec-footer .footer-half-1 .head-container {
-  border-bottom: solid 1px black;
-  padding-bottom: 30px;
-}
-.home-sec-footer .footer-half-1 .head-container h1 {
+.home-sec-footer h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 100px;
-}
-.home-sec-footer .footer-half-1 .head-container a {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  text-decoration: underline;
+  font-size: 4.375rem;
+  margin-left: 1.875rem;
   font-weight: bold;
-  color: black;
-  float: right;
-  margin-right: 30px;
-  margin-top: -50px;
 }
-.home-sec-footer .footer-half-2 {
-  height: 45%;
+.home-sec-footer .form-container {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home-sec-footer .form-container-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.home-sec-footer .form-container-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.home-sec-footer .form-input-container {
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-}
-.home-sec-footer .footer-half-2 .footer-nav-container {
   height: 100%;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
 }
-.home-sec-footer .footer-half-2 .footer-nav-container .footer-combined-nav {
-  display: flex;
+.home-sec-footer .form-input {
+  width: 90%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  height: 20px;
+  padding: 20px 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+.home-sec-footer .form-input::-moz-placeholder {
+  padding-bottom: 20px;
+  color: black;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+}
+.home-sec-footer .form-input::placeholder {
+  padding-bottom: 20px;
+  color: black;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+}
+.home-sec-footer .form-input:focus {
+  outline: none;
+  border-bottom: 3px solid black;
+}
+.home-sec-footer .form-button-container input {
+  background-color: #d9d9d9;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
   width: 200px;
-  height: 150px;
-  margin: 10px;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  transition: 0.2s ease-in-out;
 }
-.home-sec-footer .footer-half-2 .footer-nav-container .footer-combined-nav ul {
+.home-sec-footer .form-button-container input:hover {
+  background-color: #424f5f;
+  color: white;
+  cursor: pointer;
+}
+
+.home-footer {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  margin-top: 5rem;
+}
+.home-footer h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+}
+.home-footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin-left: 2rem;
+}
+.home-footer .home-footer-links {
+  height: 200px;
+  margin-left: 2rem;
+  display: flex;
+  margin-top: 3rem;
+}
+.home-footer .home-footer-links .footer-left {
+  width: 75%;
+}
+.home-footer .home-footer-links .footer-left a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+.home-footer .home-footer-links .footer-right {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home-footer .home-footer-links .footer-right ul p {
+  font-size: 20px;
+  margin-left: 0px;
+  font-weight: 600;
+}
+.home-footer .home-footer-links .footer-right ul li {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
-.home-sec-footer .footer-half-2 .footer-nav-container .footer-combined-nav ul li {
-  list-style: none;
-}
-.home-sec-footer .footer-half-2 .footer-nav-container .footer-nav {
-  width: 50%;
+.home-footer .home-footer-links .footer-right ul li a {
+  text-decoration: none;
+  color: black;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 50px;
+  font-size: 15px;
 }
-.home-sec-footer .footer-half-2 .footer-nav-container .footer-nav ul {
+.home-footer .home-footer-logo {
   display: flex;
+  align-items: flex-end;
+}
+.home-footer .home-footer-logo img {
+  height: 280px;
+  width: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.home-footer .home-footer-logo .contact-info-container {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 45px;
+  display: flex;
+  align-items: flex-end;
   justify-content: space-evenly;
 }
-.home-sec-footer .footer-half-2 .footer-nav-container .footer-nav li {
-  display: inline-block;
+.home-footer .home-footer-logo .contact-info-container p {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1980px) {
@@ -394,15 +512,7 @@
     height: 100dvh;
   }
   .home-main-header {
-    position: relative;
-    float: right;
-    right: 2rem;
-    top: 10rem;
     margin-right: 2rem;
-  }
-  .home-main-header h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 6.25rem;
   }
   .card-1 {
     position: absolute;
@@ -428,9 +538,6 @@
     position: absolute;
     margin-top: 60rem !important;
     margin-left: 75rem !important;
-  }
-  .home-sec-footer {
-    height: 70dvh !important;
   }
 }
 @media (max-width: 1400px) {

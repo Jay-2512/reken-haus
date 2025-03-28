@@ -193,53 +193,164 @@
 }
 
 .about-sec-footer {
-  height: 350px;
-  background-color: #d9d9d9;
-  margin-top: 18px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.about-sec-footer .footer-half-2 {
+
+.about-sec-footer {
+  margin-top: 6rem;
+}
+.about-sec-footer h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4.375rem;
+  margin-left: 1.875rem;
+  font-weight: bold;
+}
+.about-sec-footer .form-container {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-sec-footer .form-container-left {
+  width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.about-sec-footer .form-container-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.about-sec-footer .form-input-container {
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-}
-.about-sec-footer .footer-half-2 .footer-nav-container {
   height: 100%;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
 }
-.about-sec-footer .footer-half-2 .footer-nav-container .footer-combined-nav {
-  display: flex;
+.about-sec-footer .form-input {
+  width: 90%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  height: 20px;
+  padding: 20px 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+.about-sec-footer .form-input::-moz-placeholder {
+  padding-bottom: 20px;
+  color: black;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+}
+.about-sec-footer .form-input::placeholder {
+  padding-bottom: 20px;
+  color: black;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+}
+.about-sec-footer .form-input:focus {
+  outline: none;
+  border-bottom: 3px solid black;
+}
+.about-sec-footer .form-button-container input {
+  background-color: #d9d9d9;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
   width: 200px;
-  height: 150px;
-  margin: 10px;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  transition: 0.2s ease-in-out;
 }
-.about-sec-footer .footer-half-2 .footer-nav-container .footer-combined-nav ul {
+.about-sec-footer .form-button-container input:hover {
+  background-color: #424f5f;
+  color: white;
+  cursor: pointer;
+}
+
+.home-footer {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  margin-top: 5rem;
+}
+.home-footer h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+}
+.home-footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin-left: 2rem;
+}
+.home-footer .home-footer-links {
+  height: 200px;
+  margin-left: 2rem;
+  display: flex;
+  margin-top: 3rem;
+}
+.home-footer .home-footer-links .footer-left {
+  width: 75%;
+}
+.home-footer .home-footer-links .footer-left a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+.home-footer .home-footer-links .footer-right {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home-footer .home-footer-links .footer-right ul p {
+  font-size: 20px;
+  margin-left: 0px;
+  font-weight: 600;
+}
+.home-footer .home-footer-links .footer-right ul li {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
-.about-sec-footer .footer-half-2 .footer-nav-container .footer-combined-nav ul li {
-  list-style: none;
-}
-.about-sec-footer .footer-half-2 .footer-nav-container .footer-nav {
-  width: 50%;
+.home-footer .home-footer-links .footer-right ul li a {
+  text-decoration: none;
+  color: black;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 50px;
+  font-size: 15px;
 }
-.about-sec-footer .footer-half-2 .footer-nav-container .footer-nav ul {
+.home-footer .home-footer-logo {
   display: flex;
+  align-items: flex-end;
+}
+.home-footer .home-footer-logo img {
+  height: 280px;
+  width: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.home-footer .home-footer-logo .contact-info-container {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 45px;
+  display: flex;
+  align-items: flex-end;
   justify-content: space-evenly;
 }
-.about-sec-footer .footer-half-2 .footer-nav-container .footer-nav li {
-  display: inline-block;
+.home-footer .home-footer-logo .contact-info-container p {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1980px) {

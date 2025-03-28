@@ -1,5 +1,5 @@
 // Function to enable infinite scroll for a given container
-const setupInfiniteScroll = (containerSelector) => {
+const setupInfiniteScroll = (containerSelector, scrollDirection = "right") => {
   const container = document.querySelector(containerSelector);
 
   if (!container) return; // Exit if the container doesn't exist
@@ -42,8 +42,9 @@ const setupInfiniteScroll = (containerSelector) => {
 
   // Automatic Infinite Scroll Animation
   const startAutoScroll = () => {
+    const scrollStep = scrollDirection === "right" ? 1 : -1; // Determine scroll step based on direction
     setInterval(() => {
-      container.scrollLeft += 1; // Adjust speed by modifying the increment
+      container.scrollLeft += scrollStep; // Adjust scroll position
     }, 10); // Lower interval for smoother scroll
   };
 
@@ -51,9 +52,13 @@ const setupInfiniteScroll = (containerSelector) => {
   startAutoScroll();
 };
 
+const formInputs = document.querySelectorAll(".form-input");
+const submitButton = document.querySelector(".submit-btn");
+
 // Apply infinite scroll to both containers
-setupInfiniteScroll(".carousel-container"); // First container
-setupInfiniteScroll(".scroll-logo-text"); // Second container
-setupInfiniteScroll(".work-frame");
-setupInfiniteScroll(".home-content-carousel");
-setupInfiniteScroll(".carousel-container");
+setupInfiniteScroll(".carousel-container", "right"); // First container
+setupInfiniteScroll(".scroll-logo-text", "right"); // Second container
+setupInfiniteScroll(".work-frame", "right");
+setupInfiniteScroll(".home-content-carousel", "right");
+setupInfiniteScroll(".carousel-container", "right");
+setupInfiniteScroll(".wf-right", "left");

@@ -12,12 +12,19 @@ body {
 }
 
 .nav {
+  position: relative;
+  width: 100%;
   font-family: $primary-font;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-inline-start: 2rem;
+  margin-top: 1rem;
+
   img {
-    margin-top: 2rem;
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
   }
   ul {
     display: flex;
@@ -26,7 +33,7 @@ body {
     width: 40%;
     font-size: 1.25rem;
     list-style: none;
-    margin-right: 3rem;
+    margin-right: 2rem;
 
     li {
       display: inline-block;
