@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: rgba(234, 226, 213, 0.2784313725);
 }
 
 .nav {

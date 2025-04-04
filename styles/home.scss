@@ -160,6 +160,12 @@ $secondary-font: "Roboto", sans-serif;
       height: 100%;
       object-fit: cover;
     }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .work-info {
     width: 100%;
@@ -305,10 +311,16 @@ $secondary-font: "Roboto", sans-serif;
     }
 
     .content {
-      width: 7.5rem;
-      height: 7.5rem;
-      background-color: rgba(128, 128, 128, 0.281);
+      width: 9rem;
+      height: 9rem;
+      // background-color: rgba(128, 128, 128, 0.281);
       flex: 0 0 auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
 }
