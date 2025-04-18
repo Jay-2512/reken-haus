@@ -1,0 +1,114 @@
+.contact-section {
+  max-width: 100dvw;
+  margin-inline: 2rem;
+  font-family: "Nunito", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-section h1 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 22px;
+}
+
+.field-row.full-width textarea,
+.field-row.full-width input {
+  width: 100%;
+}
+
+.email-input {
+  width: 300px;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  font-size: 14px;
+  background: transparent;
+}
+
+textarea {
+  resize: none;
+}
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  background-color: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "Nunito", sans-serif;
+}
+
+.chip:hover {
+  background-color: #e0e0e0;
+}
+
+.chip.selected {
+  border: 2px solid black;
+  font-weight: 700;
+}
+
+.submit-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button button {
+  padding: 15px 40px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.inline-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.inline-row input {
+  width: 350px;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+.inline-row .chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.inline-row span {
+  white-space: nowrap;
+}/*# sourceMappingURL=contact.css.map */

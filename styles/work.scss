@@ -11,7 +11,7 @@
   flex-direction: column;
   gap: 50px;
   overflow: hidden;
-  margin-inline: 2rem;
+  // margin-inline: 2rem;
 }
 
 .head-container {
@@ -40,6 +40,10 @@
   align-items: center;
   overflow-x: scroll;
   overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .tag-box {

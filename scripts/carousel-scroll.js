@@ -52,13 +52,6 @@ const setupInfiniteScroll = (containerSelector, scrollDirection = "right") => {
   startAutoScroll();
 };
 
-const formInputs = document.querySelectorAll(".form-input");
-const submitButton = document.querySelector(".submit-btn");
-
-// Apply infinite scroll to both containers
-setupInfiniteScroll(".carousel-container", "right"); // First container
-setupInfiniteScroll(".scroll-logo-text", "right"); // Second container
-setupInfiniteScroll(".work-frame", "right");
-setupInfiniteScroll(".home-content-carousel", "right");
-setupInfiniteScroll(".carousel-container", "right");
-setupInfiniteScroll(".wf-right", "left");
+setupInfiniteScroll(".ft-works-carousel-container", "right");
+setupInfiniteScroll(".pf-works-carousel-container", "left");
+setupInfiniteScroll(".clients-container", "right");

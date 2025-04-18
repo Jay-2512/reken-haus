@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reken Haus | Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.37/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles/global.css" />
+    <link rel="stylesheet" href="./Styles/home.css" />
+  </head>
+  <body>
+    <nav class="reken-nav-container">
+      <div class="reken-nav-logo-container">
+        <a href="home.html" class="reken-nav-logo">
+          <img src="res/reken-logo-full.png" alt="Reken Logo" />
+        </a>
+      </div>
+      <ul class="reken-nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html#about">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero-section">
+      <div class="logo-container">
+        <img class="hero-logo-h1" src="res/reken-logo-h1.png" alt="Reken" />
+        <img class="hero-logo-h2" src="res/reken-logo-h2.png" alt="Reken" />
+      </div>
+    </section>
+    <section class="about-section" id="about">
+      <h1>Tomorrow's brand today</h1>
+      <p class="about-content-1">
+        Welcome to Reken Haus, where creativity meets strategy to shape the
+        brands of tomorrow. From innovative digital campaigns to data-driven
+        insights, we’re here to redefine how you connect with your audience.
+        Dive into a world of possibilities and see how we can elevate your brand
+        to the next level. <br />
+        <a href="#" class="link-primary">Our full story</a>
+      </p>
+      <p class="about-content-2">
+        Shaping the Future of Marketing. At Reken Haus, we combine
+        forward-thinking ideas with cutting-edge tools to help your business
+        thrive in the digital age. Explore our range of services designed to
+        make your brand stand out, from SEO to social media mastery, and let’s
+        craft the future of your success together. <br />
+      </p>
+      <svg
+        width="1440"
+        height="889"
+        viewBox="0 0 1440 889"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          id="svgPath"
+          d="M-70.3979 377.416C103.563 281.17 717.522 -181.305 810.625 157.779C841.245 271.02 767.163 355.692 694.766 431.784C655.877 472.009 615.758 512.845 585.477 560.904C550.482 620.626 535.578 731.399 616.67 761.494C669.09 780.362 729.371 752.073 772.043 722.191C876.051 651.182 950.107 518.85 1087.08 509.128C1210.72 500.173 1246.28 613.95 1269.37 712.627C1279.07 758.317 1296.13 809.417 1336.55 837.61C1381.86 869.388 1431.69 847.746 1483.55 830.432"
+          stroke="#424F5F"
+          stroke-width="70"
+          stroke-miterlimit="10"
+        />
+      </svg>
+    </section>
+    <section class="ft-works-section">
+      <h1>featured works</h1>
+      <div class="ft-works-carousel-container">
+        <div class="scroll-card">
+          <div class="card-img-container">
+            <video autoplay muted loop playsinline id="hover-video">
+              <source src="./res/vids/Video_1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="card-info-container">
+            <h1>fitflop</h1>
+            <p>Production Video</p>
+          </div>
+        </div>
+        <div class="scroll-card">
+          <div class="card-img-container">
+            <video autoplay muted loop playsinline id="hover-video">
+              <source src="./res/vids/Motion_1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="card-info-container">
+            <h1>Kalorie Ko.</h1>
+            <p>Healthy weight gain methods</p>
+          </div>
+        </div>
+        <div class="scroll-card">
+          <div class="card-img-container">
+            <video autoplay muted loop playsinline id="hover-video">
+              <source src="./res/vids/Video_2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="card-info-container">
+            <h1>Backwater Ripples</h1>
+            <p>Production video</p>
+          </div>
+        </div>
+        <div class="scroll-card">
+          <div class="card-img-container">
+            <video autoplay muted loop playsinline id="hover-video">
+              <source src="./res/vids/Motion_2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="card-info-container">
+            <h1>Kalorie Ko.</h1>
+            <p>Hyperlipidemia motion</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pf-works-section">
+      <h1>our portfolio</h1>
+      <div class="pf-works-carousel-container">
+        <div class="scroll-card">
+          <div class="card-img-container">
+            <img src="./res/fet_1.jpeg" alt="" />
+          </div>
+          <div class="card-info-container">
+            <h1>Name</h1>
+            <p>Description</p>
+          </div>
+        </div>
+        <div class="scroll-card">
+          <div class="card-img-container">
+            <img src="./res/fet_2.jpeg" alt="" />
+          </div>
+          <div class="card-info-container">
+            <h1>Name</h1>
+            <p>Description</p>
+          </div>
+        </div>
+        <div class="scroll-card">
+          <div class="card-img-container">
+            <img src="./res/fet_3.jpeg" alt="" />
+          </div>
+          <div class="card-info-container">
+            <h1>Name</h1>
+            <p>Description</p>
+          </div>
+        </div>
+        <div class="scroll-card">
+          <div class="card-img-container">
+            <img src="./res/fet_4.jpeg" alt="" />
+          </div>
+          <div class="card-info-container">
+            <h1>Name</h1>
+            <p>Description</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services-section">
+      <h1 class="service-head">Services</h1>
+      <div class="services-container">
+        <div class="service-tag-container">
+          <h1 class="service-title">Services</h1>
+        </div>
+        <div class="swipe-card-container">
+          <div class="swipe-carousel" id="carousel">
+            <div class="card">
+              <div class="swipe-card-img-container">
+                <img src="./res/digital_marketing.jpg" alt="" />
+              </div>
+              <div class="swipe-card-content">
+                <h3>Digital Marketing</h3>
+                <p>
+                  "Boost your online presence with tailored strategies to
+                  maximize engagement and conversions."
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="swipe-card-img-container">
+                <img src="./res/branding.jpg" alt="" />
+              </div>
+              <div class="swipe-card-content">
+                <h3>Branding</h3>
+                <p>
+                  " Craft a unique identity that resonates with your audience
+                  and builds lasting recognition."
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="swipe-card-img-container">
+                <img src="./res/production.jpg" alt="" />
+              </div>
+              <div class="swipe-card-content">
+                <h3>Production</h3>
+                <p>
+                  " Bring your ideas to life with expert production services for
+                  flawless execution."
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="swipe-card-img-container">
+                <img src="./res/development.jpg" alt="" />
+              </div>
+              <div class="swipe-card-content">
+                <h3>Development</h3>
+                <p>
+                  "Empower your business with cutting-edge development solutions
+                  tailored to your needs."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials-section">
+      <h1>Testimonals</h1>
+      <svg
+        width="1440"
+        height="889"
+        viewBox="0 0 1440 889"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        id="svgPath2"
+      >
+        <path
+          id="svgPath"
+          d="M-70.3979 377.416C103.563 281.17 717.522 -181.305 810.625 157.779C841.245 271.02 767.163 355.692 694.766 431.784C655.877 472.009 615.758 512.845 585.477 560.904C550.482 620.626 535.578 731.399 616.67 761.494C669.09 780.362 729.371 752.073 772.043 722.191C876.051 651.182 950.107 518.85 1087.08 509.128C1210.72 500.173 1246.28 613.95 1269.37 712.627C1279.07 758.317 1296.13 809.417 1336.55 837.61C1381.86 869.388 1431.69 847.746 1483.55 830.432"
+          stroke="#424F5F"
+          stroke-width="70"
+          stroke-miterlimit="10"
+        />
+      </svg>
+      <div class="testi-card pos-1">
+        <div class="base">
+          <p class="quote">
+            “Working with Reken Haus was an absolute game-changer for our brand.
+            They didn’t just design a logo — they crafted an entire identity
+            that perfectly captured our mission and vibe. Their branding team is
+            sharp, creative, and incredibly collaborative.”
+          </p>
+          <hr />
+          <h3>Ava Thompson</h3>
+          <p class="designation">Founder, GreenGlow Organics</p>
+        </div>
+      </div>
+      <div class="testi-card pos-2">
+        <div class="base">
+          <p class="quote">
+            “Working with Reken Haus was an absolute game-changer for our brand.
+            They didn’t just design a logo — they crafted an entire identity
+            that perfectly captured our mission and vibe. Their branding team is
+            sharp, creative, and incredibly collaborative.”
+          </p>
+          <hr />
+          <h3>Ava Thompson</h3>
+          <p class="designation">Founder, GreenGlow Organics</p>
+        </div>
+      </div>
+      <div class="testi-card pos-3">
+        <div class="base">
+          <p class="quote">
+            “Working with Reken Haus was an absolute game-changer for our brand.
+            They didn’t just design a logo — they crafted an entire identity
+            that perfectly captured our mission and vibe. Their branding team is
+            sharp, creative, and incredibly collaborative.”
+          </p>
+          <hr />
+          <h3>Ava Thompson</h3>
+          <p class="designation">Founder, GreenGlow Organics</p>
+        </div>
+      </div>
+      <div class="testi-card pos-4">
+        <div class="base">
+          <p class="quote">
+            “Working with Reken Haus was an absolute game-changer for our brand.
+            They didn’t just design a logo — they crafted an entire identity
+            that perfectly captured our mission and vibe. Their branding team is
+            sharp, creative, and incredibly collaborative.”
+          </p>
+          <hr />
+          <h3>Ava Thompson</h3>
+          <p class="designation">Founder, GreenGlow Organics</p>
+        </div>
+      </div>
+    </section>
+    <section class="clients-section">
+      <div class="clients-container">
+        <div class="client-scroll-container">
+          <img src="./res/clients/c1.png" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c2.png" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c3.jpg" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c4.jpg" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c5.jpg" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c6.png" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c1.png" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c2.png" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c3.jpg" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c4.jpg" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c5.jpg" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c6.png" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c1.png" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c2.png" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c3.jpg" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c4.jpg" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c5.jpg" alt="" />
+        </div>
+        <div class="client-scroll-container">
+          <img src="./res/clients/c6.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="footer-section">
+      <div class="footer-contact-div">
+        <h1>Get started now!</h1>
+        <h3>It takes less than a minute of your time.</h3>
+        <div class="footer-email-links">
+          <a href="mailto:info@rekenhaus.com">info@rekenhaus.com</a>
+          <a href="mailto:info@rekenhaus.com">info@rekenhaus.com</a>
+        </div>
+        <a class="footer-contact-form" href="contact.html">Contact form</a>
+      </div>
+      <div class="footer-links-div">
+        <div class="social-links-container">
+          <div class="link-box">
+            <a href="#">Pintrest</a>
+            <svg
+              width="15"
+              height="17"
+              viewBox="0 0 11 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.35355 0.646446C7.15829 0.451184 6.84171 0.451184 6.64645 0.646446L3.46447 3.82843C3.2692 4.02369 3.2692 4.34027 3.46447 4.53553C3.65973 4.7308 3.97631 4.7308 4.17157 4.53553L7 1.70711L9.82843 4.53553C10.0237 4.7308 10.3403 4.7308 10.5355 4.53553C10.7308 4.34027 10.7308 4.02369 10.5355 3.82843L7.35355 0.646446ZM7.5 12L7.5 1L6.5 1L6.5 12L7.5 12Z"
+                fill="black"
+              />
+              <line y1="11.5" x2="7" y2="11.5" stroke="black" />
+            </svg>
+          </div>
+          <div class="link-box">
+            <a href="#">Dribbble</a>
+            <svg
+              width="15"
+              height="17"
+              viewBox="0 0 11 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.35355 0.646446C7.15829 0.451184 6.84171 0.451184 6.64645 0.646446L3.46447 3.82843C3.2692 4.02369 3.2692 4.34027 3.46447 4.53553C3.65973 4.7308 3.97631 4.7308 4.17157 4.53553L7 1.70711L9.82843 4.53553C10.0237 4.7308 10.3403 4.7308 10.5355 4.53553C10.7308 4.34027 10.7308 4.02369 10.5355 3.82843L7.35355 0.646446ZM7.5 12L7.5 1L6.5 1L6.5 12L7.5 12Z"
+                fill="black"
+              />
+              <line y1="11.5" x2="7" y2="11.5" stroke="black" />
+            </svg>
+          </div>
+          <div class="link-box">
+            <a href="#">Behance</a>
+            <svg
+              width="15"
+              height="17"
+              viewBox="0 0 11 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.35355 0.646446C7.15829 0.451184 6.84171 0.451184 6.64645 0.646446L3.46447 3.82843C3.2692 4.02369 3.2692 4.34027 3.46447 4.53553C3.65973 4.7308 3.97631 4.7308 4.17157 4.53553L7 1.70711L9.82843 4.53553C10.0237 4.7308 10.3403 4.7308 10.5355 4.53553C10.7308 4.34027 10.7308 4.02369 10.5355 3.82843L7.35355 0.646446ZM7.5 12L7.5 1L6.5 1L6.5 12L7.5 12Z"
+                fill="black"
+              />
+              <line y1="11.5" x2="7" y2="11.5" stroke="black" />
+            </svg>
+          </div>
+          <div class="link-box">
+            <a href="#">Instagram</a>
+            <svg
+              width="15"
+              height="17"
+              viewBox="0 0 11 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.35355 0.646446C7.15829 0.451184 6.84171 0.451184 6.64645 0.646446L3.46447 3.82843C3.2692 4.02369 3.2692 4.34027 3.46447 4.53553C3.65973 4.7308 3.97631 4.7308 4.17157 4.53553L7 1.70711L9.82843 4.53553C10.0237 4.7308 10.3403 4.7308 10.5355 4.53553C10.7308 4.34027 10.7308 4.02369 10.5355 3.82843L7.35355 0.646446ZM7.5 12L7.5 1L6.5 1L6.5 12L7.5 12Z"
+                fill="black"
+              />
+              <line y1="11.5" x2="7" y2="11.5" stroke="black" />
+            </svg>
+          </div>
+          <div class="link-box">
+            <a href="#">Facebook</a>
+            <svg
+              width="15"
+              height="17"
+              viewBox="0 0 11 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.35355 0.646446C7.15829 0.451184 6.84171 0.451184 6.64645 0.646446L3.46447 3.82843C3.2692 4.02369 3.2692 4.34027 3.46447 4.53553C3.65973 4.7308 3.97631 4.7308 4.17157 4.53553L7 1.70711L9.82843 4.53553C10.0237 4.7308 10.3403 4.7308 10.5355 4.53553C10.7308 4.34027 10.7308 4.02369 10.5355 3.82843L7.35355 0.646446ZM7.5 12L7.5 1L6.5 1L6.5 12L7.5 12Z"
+                fill="black"
+              />
+              <line y1="11.5" x2="7" y2="11.5" stroke="black" />
+            </svg>
+          </div>
+          <div class="link-box">
+            <a href="#">Linked In</a>
+            <svg
+              width="15"
+              height="17"
+              viewBox="0 0 11 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.35355 0.646446C7.15829 0.451184 6.84171 0.451184 6.64645 0.646446L3.46447 3.82843C3.2692 4.02369 3.2692 4.34027 3.46447 4.53553C3.65973 4.7308 3.97631 4.7308 4.17157 4.53553L7 1.70711L9.82843 4.53553C10.0237 4.7308 10.3403 4.7308 10.5355 4.53553C10.7308 4.34027 10.7308 4.02369 10.5355 3.82843L7.35355 0.646446ZM7.5 12L7.5 1L6.5 1L6.5 12L7.5 12Z"
+                fill="black"
+              />
+              <line y1="11.5" x2="7" y2="11.5" stroke="black" />
+            </svg>
+          </div>
+        </div>
+        <svg
+          width="1100"
+          height="675"
+          viewBox="0 0 1100 675"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M-315.685 329.361C-183.232 245.21 403.034 -160.652 480.281 152.139C505.638 256.585 434.075 331.966 364.329 399.545C326.883 435.252 288.272 471.484 258.637 514.599C224.27 568.25 207.203 669.165 282.04 698.965C330.434 717.693 387.508 693.503 428.191 667.364C527.298 605.32 600.194 486.341 728.325 481.284C843.99 476.555 873.945 581.63 892.685 672.543C900.435 714.61 914.909 761.834 951.832 788.755C993.225 819.094 1040.35 800.692 1089.26 786.307"
+            stroke="#424f628f"
+            stroke-opacity="0.32"
+            stroke-width="70"
+            stroke-miterlimit="10"
+          />
+        </svg>
+
+        <div class="footer-bottom-links">
+          <div class="links">
+            <a href="home.html">Home</a>
+            <a href="home.html#about">About</a>
+            <a href="services.html">Services</a>
+            <a href="work.html">Works</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <img src="./res/footer-logo.png" alt="" />
+          <div class="links">
+            <a href="home.html">Home</a>
+            <a href="home.html#about">About</a>
+            <a href="services.html">Services</a>
+            <a href="work.html">Works</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts/carousel-scroll.js"></script>
+    <script src="scripts/smooth-scroll-global.js"></script>
+    <script src="scripts/home-anim.js"></script>
+  </body>
+</html>
