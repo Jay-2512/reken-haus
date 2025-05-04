@@ -16,20 +16,77 @@
     />
     <link rel="stylesheet" href="./Styles/global.css" />
     <link rel="stylesheet" href="./Styles/contact.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "qseApo_V31-keMOHE",
+        });
+      })();
+    </script>
+    <script>
+      function selectChip(button, fieldName) {
+        // Highlight selected chip
+        const chipGroup = button.parentElement;
+        [...chipGroup.children].forEach((chip) =>
+          chip.classList.remove("selected")
+        );
+        button.classList.add("selected");
+
+        // Set hidden input value
+        document.getElementById(fieldName).value = button.textContent;
+      }
+
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const data = {
+              fname: document.getElementById("fname").value,
+              lname: document.getElementById("lname").value,
+              company: document.getElementById("company").value,
+              discovery: document.getElementById("discovery").value,
+              help: document.getElementById("help").value,
+              budget: document.getElementById("budget").value,
+              projectDescription:
+                document.getElementById("projectDescription").value,
+              email: document.getElementById("email").value,
+            };
+
+            console.log(JSON.stringify(data, null, 2));
+
+            // Send using EmailJS
+            emailjs.sendForm("service_owlm8nm", "template_plqpgfb", this).then(
+              () => {
+                console.log("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
   </head>
   <body>
     <nav class="reken-nav-container reken-nav-visible">
       <div class="reken-nav-logo-container">
-        <a href="home.html" class="reken-nav-logo">
+        <a href="./index" class="reken-nav-logo">
           <img src="res/reken-logo-full.png" alt="Reken Logo" />
         </a>
       </div>
       <ul class="reken-nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="home.html#about">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="work.html">Works</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="./index">Home</a></li>
+        <li><a href="./index#about">About</a></li>
+        <li><a href="./services">Services</a></li>
+        <li><a href="./work">Works</a></li>
+        <li><a href="./contact">Contact</a></li>
       </ul>
     </nav>
     <section class="contact-section">
@@ -39,61 +96,140 @@
         inspiration.
       </h1>
 
-      <form class="contact-form">
+      <form id="contact-form" class="contact-form">
         <!-- Name Row -->
         <div class="inline-row">
           <span>Hi! My name is</span>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
+          <input type="text" name="fname" id="fname" placeholder="First Name" />
+          <input type="text" name="lname" id="lname" placeholder="Last Name" />
           <span>and I work at</span>
-          <input type="text" placeholder="Company" />
+          <input
+            type="text"
+            name="company"
+            id="company"
+            placeholder="Company"
+          />
         </div>
 
         <!-- Discovery Row -->
-        <div class="inline-row">
+        <div class="inline-row" id="discovery-row">
           <span>I found you guys using</span>
           <div class="chip-group">
-            <button type="button" class="chip">Google Search</button>
-            <button type="button" class="chip">Instagram</button>
-            <button type="button" class="chip">LinkedIn</button>
-            <button type="button" class="chip">Referral</button>
+            <button
+              type="button"
+              class="chip"
+              onclick="selectChip(this, 'discovery')"
+            >
+              Google Search
+            </button>
+            <button
+              type="button"
+              class="chip"
+              onclick="selectChip(this, 'discovery')"
+            >
+              Instagram
+            </button>
+            <button
+              type="button"
+              class="chip"
+              onclick="selectChip(this, 'discovery')"
+            >
+              LinkedIn
+            </button>
+            <button
+              type="button"
+              class="chip"
+              onclick="selectChip(this, 'discovery')"
+            >
+              Referral
+            </button>
           </div>
+          <input type="hidden" name="discovery" id="discovery" />
         </div>
 
         <!-- Help Row -->
-        <div class="inline-row">
+        <div class="inline-row" id="help-row">
           <span>I’m looking for help with</span>
           <div class="chip-group">
-            <button type="button" class="chip">Branding</button>
-            <button type="button" class="chip">Web Design</button>
-            <button type="button" class="chip">App Design</button>
+            <button
+              type="button"
+              class="chip"
+              onclick="selectChip(this, 'help')"
+            >
+              Branding
+            </button>
+            <button
+              type="button"
+              class="chip"
+              onclick="selectChip(this, 'help')"
+            >
+              Web Design
+            </button>
+            <button
+              type="button"
+              class="chip"
+              onclick="selectChip(this, 'help')"
+            >
+              App Design
+            </button>
           </div>
+          <input type="hidden" name="help" id="help" />
         </div>
 
         <!-- Budget Row -->
-        <div class="inline-row">
+        <div class="inline-row" id="budget-row">
           <span>My Budget is around</span>
           <div class="chip-group">
-            <button type="button" class="chip">10,000</button>
-            <button type="button" class="chip">25,000</button>
-            <button type="button" class="chip">50,000+</button>
+            <button
+              type="button"
+              class="chip"
+              onclick="selectChip(this, 'budget')"
+            >
+              10,000
+            </button>
+            <button
+              type="button"
+              class="chip"
+              onclick="selectChip(this, 'budget')"
+            >
+              25,000
+            </button>
+            <button
+              type="button"
+              class="chip"
+              onclick="selectChip(this, 'budget')"
+            >
+              50,000+
+            </button>
           </div>
+          <input type="hidden" name="budget" id="budget" />
         </div>
 
         <!-- Project Description -->
         <div class="field-row full-width">
           <label>Here is what our project is about:</label>
-          <textarea rows="1"></textarea>
+          <textarea
+            rows="1"
+            name="projectDescription"
+            id="projectDescription"
+          ></textarea>
         </div>
 
         <!-- Email -->
         <div class="field-row full-width">
           <label>You can reach me at</label>
-          <input class="email-input" type="email" placeholder="Email" />
+          <input
+            class="email-input"
+            type="email"
+            placeholder="Email"
+            name="email"
+            id="email"
+          />
         </div>
 
         <div class="submit-button">
           <button type="submit">Send Message</button>
+          <button type="submit">Contact Us</button>
         </div>
       </form>
     </section>

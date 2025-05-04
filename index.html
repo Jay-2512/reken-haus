@@ -17,22 +17,27 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./Styles/global.css" />
     <link rel="stylesheet" href="./Styles/home.css" />
   </head>
+
   <body>
     <nav class="reken-nav-container">
-      <div class="reken-nav-logo-container">
-        <a href="home.html" class="reken-nav-logo">
+      <div class="reken-nav-logo-container hidden">
+        <a href="./index" class="reken-nav-logo">
           <img src="res/reken-logo-full.png" alt="Reken Logo" />
         </a>
       </div>
       <ul class="reken-nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="home.html#about">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="work.html">Works</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="./index">Home</a></li>
+        <li><a href="./index.html#about">About</a></li>
+        <li><a href="./services">Services</a></li>
+        <li><a href="./work">Works</a></li>
+        <li><a href="./contact">Contact</a></li>
       </ul>
     </nav>
     <section class="hero-section">
@@ -40,23 +45,24 @@
         <img class="hero-logo-h1" src="res/reken-logo-h1.png" alt="Reken" />
         <img class="hero-logo-h2" src="res/reken-logo-h2.png" alt="Reken" />
       </div>
+      <div class="hero-links-container">
+        <div class="hero-link-primary">
+          <a href="#">Book a call</a>
+        </div>
+        <div class="hero-link-secondary">
+          <a href="#">Contact us</a>
+        </div>
+      </div>
     </section>
     <section class="about-section" id="about">
-      <h1>Tomorrow's brand today</h1>
+      <h1>TOMORROW'S BRAND TODAY</h1>
       <p class="about-content-1">
         Welcome to Reken Haus, where creativity meets strategy to shape the
         brands of tomorrow. From innovative digital campaigns to data-driven
         insights, we’re here to redefine how you connect with your audience.
         Dive into a world of possibilities and see how we can elevate your brand
         to the next level. <br />
-        <a href="#" class="link-primary">Our full story</a>
-      </p>
-      <p class="about-content-2">
-        Shaping the Future of Marketing. At Reken Haus, we combine
-        forward-thinking ideas with cutting-edge tools to help your business
-        thrive in the digital age. Explore our range of services designed to
-        make your brand stand out, from SEO to social media mastery, and let’s
-        craft the future of your success together. <br />
+        <!-- <a href="#" class="link-primary">Our full story</a> -->
       </p>
       <svg
         width="1440"
@@ -67,12 +73,19 @@
       >
         <path
           id="svgPath"
-          d="M-70.3979 377.416C103.563 281.17 717.522 -181.305 810.625 157.779C841.245 271.02 767.163 355.692 694.766 431.784C655.877 472.009 615.758 512.845 585.477 560.904C550.482 620.626 535.578 731.399 616.67 761.494C669.09 780.362 729.371 752.073 772.043 722.191C876.051 651.182 950.107 518.85 1087.08 509.128C1210.72 500.173 1246.28 613.95 1269.37 712.627C1279.07 758.317 1296.13 809.417 1336.55 837.61C1381.86 869.388 1431.69 847.746 1483.55 830.432"
+          d="M-250.3979 377.416C103.563 281.17 717.522 -181.305 810.625 157.779C841.245 271.02 767.163 355.692 694.766 431.784C655.877 472.009 615.758 512.845 585.477 560.904C550.482 620.626 535.578 731.399 616.67 761.494C669.09 780.362 729.371 752.073 772.043 722.191C876.051 651.182 950.107 518.85 1087.08 509.128C1210.72 500.173 1246.28 613.95 1269.37 712.627C1279.07 758.317 1296.13 809.417 1336.55 837.61C1381.86 869.388 1431.69 847.746 1683.55 780.432"
           stroke="#424F5F"
           stroke-width="70"
           stroke-miterlimit="10"
         />
       </svg>
+      <p class="about-content-2">
+        Shaping the Future of Marketing. At Reken Haus, we combine
+        forward-thinking ideas with cutting-edge tools to help your business
+        thrive in the digital age. Explore our range of services designed to
+        make your brand stand out, from SEO to social media mastery, and let’s
+        craft the future of your success together. <br />
+      </p>
     </section>
     <section class="ft-works-section">
       <h1>featured works</h1>
@@ -240,13 +253,13 @@
       >
         <path
           id="svgPath"
-          d="M-70.3979 377.416C103.563 281.17 717.522 -181.305 810.625 157.779C841.245 271.02 767.163 355.692 694.766 431.784C655.877 472.009 615.758 512.845 585.477 560.904C550.482 620.626 535.578 731.399 616.67 761.494C669.09 780.362 729.371 752.073 772.043 722.191C876.051 651.182 950.107 518.85 1087.08 509.128C1210.72 500.173 1246.28 613.95 1269.37 712.627C1279.07 758.317 1296.13 809.417 1336.55 837.61C1381.86 869.388 1431.69 847.746 1483.55 830.432"
+          d="M-250.3979 377.416C103.563 281.17 717.522 -181.305 810.625 157.779C841.245 271.02 767.163 355.692 694.766 431.784C655.877 472.009 615.758 512.845 585.477 560.904C550.482 620.626 535.578 731.399 616.67 761.494C669.09 780.362 729.371 752.073 772.043 722.191C876.051 651.182 950.107 518.85 1087.08 509.128C1210.72 500.173 1246.28 613.95 1269.37 712.627C1279.07 758.317 1296.13 809.417 1336.55 837.61C1381.86 869.388 1431.69 847.746 1683.55 780.432"
           stroke="#424F5F"
           stroke-width="70"
           stroke-miterlimit="10"
         />
       </svg>
-      <div class="testi-card pos-1">
+      <div class="testi-card pos-1 testi-desk">
         <div class="base">
           <p class="quote">
             “Working with Reken Haus was an absolute game-changer for our brand.
@@ -259,7 +272,7 @@
           <p class="designation">Founder, GreenGlow Organics</p>
         </div>
       </div>
-      <div class="testi-card pos-2">
+      <div class="testi-card pos-2 testi-desk">
         <div class="base">
           <p class="quote">
             “Working with Reken Haus was an absolute game-changer for our brand.
@@ -272,7 +285,7 @@
           <p class="designation">Founder, GreenGlow Organics</p>
         </div>
       </div>
-      <div class="testi-card pos-3">
+      <div class="testi-card pos-3 testi-desk">
         <div class="base">
           <p class="quote">
             “Working with Reken Haus was an absolute game-changer for our brand.
@@ -285,7 +298,7 @@
           <p class="designation">Founder, GreenGlow Organics</p>
         </div>
       </div>
-      <div class="testi-card pos-4">
+      <div class="testi-card pos-4 testi-desk">
         <div class="base">
           <p class="quote">
             “Working with Reken Haus was an absolute game-changer for our brand.
@@ -296,6 +309,60 @@
           <hr />
           <h3>Ava Thompson</h3>
           <p class="designation">Founder, GreenGlow Organics</p>
+        </div>
+      </div>
+      <div class="mobile-testi-container">
+        <div class="testi-card">
+          <div class="base">
+            <p class="quote">
+              “Working with Reken Haus was an absolute game-changer for our
+              brand. They didn’t just design a logo — they crafted an entire
+              identity that perfectly captured our mission and vibe. Their
+              branding team is sharp, creative, and incredibly collaborative.”
+            </p>
+            <hr />
+            <h3>Ava Thompson</h3>
+            <p class="designation">Founder, GreenGlow Organics</p>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="base">
+            <p class="quote">
+              “Working with Reken Haus was an absolute game-changer for our
+              brand. They didn’t just design a logo — they crafted an entire
+              identity that perfectly captured our mission and vibe. Their
+              branding team is sharp, creative, and incredibly collaborative.”
+            </p>
+            <hr />
+            <h3>Ava Thompson</h3>
+            <p class="designation">Founder, GreenGlow Organics</p>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="base">
+            <p class="quote">
+              “Working with Reken Haus was an absolute game-changer for our
+              brand. They didn’t just design a logo — they crafted an entire
+              identity that perfectly captured our mission and vibe. Their
+              branding team is sharp, creative, and incredibly collaborative.”
+            </p>
+            <hr />
+            <h3>Ava Thompson</h3>
+            <p class="designation">Founder, GreenGlow Organics</p>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="base">
+            <p class="quote">
+              “Working with Reken Haus was an absolute game-changer for our
+              brand. They didn’t just design a logo — they crafted an entire
+              identity that perfectly captured our mission and vibe. Their
+              branding team is sharp, creative, and incredibly collaborative.”
+            </p>
+            <hr />
+            <h3>Ava Thompson</h3>
+            <p class="designation">Founder, GreenGlow Organics</p>
+          </div>
         </div>
       </div>
     </section>
@@ -363,9 +430,9 @@
         <h3>It takes less than a minute of your time.</h3>
         <div class="footer-email-links">
           <a href="mailto:info@rekenhaus.com">info@rekenhaus.com</a>
-          <a href="mailto:info@rekenhaus.com">info@rekenhaus.com</a>
+          <a href="mailto:admin@rekenhaus.com">admin@rekenhaus.com</a>
         </div>
-        <a class="footer-contact-form" href="contact.html">Contact form</a>
+        <a class="footer-contact-form" href="contact">Contact form</a>
       </div>
       <div class="footer-links-div">
         <div class="social-links-container">
@@ -472,6 +539,7 @@
           viewBox="0 0 1100 675"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          class="footer-svg"
         >
           <path
             d="M-315.685 329.361C-183.232 245.21 403.034 -160.652 480.281 152.139C505.638 256.585 434.075 331.966 364.329 399.545C326.883 435.252 288.272 471.484 258.637 514.599C224.27 568.25 207.203 669.165 282.04 698.965C330.434 717.693 387.508 693.503 428.191 667.364C527.298 605.32 600.194 486.341 728.325 481.284C843.99 476.555 873.945 581.63 892.685 672.543C900.435 714.61 914.909 761.834 951.832 788.755C993.225 819.094 1040.35 800.692 1089.26 786.307"
@@ -484,25 +552,21 @@
 
         <div class="footer-bottom-links">
           <div class="links">
-            <a href="home.html">Home</a>
-            <a href="home.html#about">About</a>
-            <a href="services.html">Services</a>
-            <a href="work.html">Works</a>
-            <a href="contact.html">Contact</a>
+            <a href="./index">Home</a>
+            <a href="./index#about">About</a>
+            <a href="./services">Services</a>
+            <a href="./work">Works</a>
+            <a href="./contact">Contact</a>
           </div>
           <img src="./res/footer-logo.png" alt="" />
           <div class="links">
-            <a href="home.html">Home</a>
-            <a href="home.html#about">About</a>
-            <a href="services.html">Services</a>
-            <a href="work.html">Works</a>
-            <a href="contact.html">Contact</a>
+            <a href="#" class="scroll-to-top">↑</a>
           </div>
         </div>
       </div>
     </section>
-    <script src="scripts/carousel-scroll.js"></script>
-    <script src="scripts/smooth-scroll-global.js"></script>
-    <script src="scripts/home-anim.js"></script>
+    <script src="./scripts/carousel-scroll.js"></script>
+    <script src="./scripts/smooth-scroll-global.js"></script>
+    <script src="./scripts/home-anim.js"></script>
   </body>
 </html>

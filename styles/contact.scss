@@ -118,3 +118,12 @@ textarea {
     white-space: nowrap;
   }
 }
+
+@media (max-width: 600px) {
+  .submit-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
